@@ -1,1 +1,31 @@
-<h1>Login works!</h1>
+<div class="wrapper">
+  <div class="form">
+    <div class="top-title">
+      Battle For Universe
+    </div>
+    <ng-container *ngIf="systemOnline">
+      <div class="single-row">
+        <div class="left-content">
+          Username
+        </div>
+        <div class="right-content">
+          <input type="text" #username placeholder="Pick an username..." class="cst-inp">
+        </div>
+      </div>
+      <div class="single-row">
+        <div class="left-content">
+          Password
+        </div>
+        <div class="right-content">
+          <input type="password" #username class="cst-inp-pwd">
+        </div>
+      </div>
+      <div class="hz-spacer"></div>
+    </ng-container>
+    <ng-container *ngIf="!systemOnline">
+      <div class="server-offline-message">
+        {{statusMessage}}
+      </div>
+    </ng-container>
+  </div>
+</div>

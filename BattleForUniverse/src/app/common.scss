@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Common';
+    src: url('../fonts/Gasalt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Special';
+    src: url('../fonts/zorque.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body{
+    font-family: 'Common', Courier, monospace;
+}
